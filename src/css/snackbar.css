@@ -1,0 +1,103 @@
+.form {
+  max-width: 360px;
+  margin: 20px auto;
+  font-family: 'Montserrat', sans-serif;
+  /* color: #333; */
+}
+
+.form label {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: left;
+}
+
+.form input[type='number'] {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 16px;
+}
+
+.form input[type='number']:hover,
+.form input[type='number']:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 4px rgba(74, 108, 247, 0.4);
+  outline: none;
+}
+
+.form fieldset {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 360px;
+  height: 78px;
+  margin: 0 auto 24px;
+  padding: 8px 30px 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  display: inline-flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.form fieldset legend {
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  /* padding-left: 28px; */
+}
+
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #6c8cff;
+}
+
+.iziToast {
+  width: 360px !important;
+  min-width: 360px !important;
+  max-width: 360px !important;
+}

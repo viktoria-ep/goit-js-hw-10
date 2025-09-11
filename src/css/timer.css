@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+#datetime-picker {
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-top: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#datetime-picker:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.25);
+}
+
+#datetime-picker:hover {
+  border-color: #4a6cf7;
+}
+
+#datetime-picker:disabled {
+  background: #f1f1f1;
+  color: #808080;
+  border-color: #aaa;
+  cursor: not-allowed;
+}
+
+button[data-start] {
+  width: 75px;
+  height: 40px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+  margin-left: 8px;
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+  transition: background 0.3s;
+}
+
+button[data-start]:not(:disabled) {
+  background: #4e75ff;
+  cursor: pointer;
+  color: #fff;
+}
+
+button[data-start]:not(:disabled):hover {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background: #cfcfcf;
+  cursor: pointer;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  min-width: 346px;
+  height: 72px;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+}
